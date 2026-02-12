@@ -1,7 +1,7 @@
-#create program that asks the user to enter their name and age.
-# Declare 2 var, one for namen and age
-# use input() function
-#print a greeting message showing the users name and age
+# create program that asks the user to enter their name and age.
+# Declare 2 var, one for name and age.
+# use input() function.
+# print a greeting message showing the users name and age.
 
 name = input("What's your name? : ")
 age = input("How old are you? : ")
