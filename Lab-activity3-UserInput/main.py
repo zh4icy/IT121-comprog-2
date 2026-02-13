@@ -7,4 +7,4 @@
 name = input("What's your name? : ")
 age = int(input("How old are you? : "))
 
-print("Hello! I am", name ,",", "and I am", age, "years old. Nice to meet you!")
+print(f"\nHello! I am {name}, and I am {age} years old. Nice to meet you!")
