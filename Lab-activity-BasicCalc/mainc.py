@@ -9,7 +9,7 @@ try:
         
     operation = int(input("\nEnter choice (1/2/3/4): "))
 
-    if operation not in [1, 2, 3, 4]:
+    if operation < 1 or operation > 4:
         print("Invalid operation choice.")
         exit()
 
