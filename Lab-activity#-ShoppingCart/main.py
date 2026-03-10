@@ -67,7 +67,7 @@ while True:
     print("4 - Checkout")
     print("5 - Exit")
 
-    choice = input("Enter your choice: ")
+    choice = input("\nEnter your choice: ")
 
     if choice == "1":
         name = input("Enter item name: ")
