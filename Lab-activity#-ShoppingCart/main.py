@@ -56,3 +56,37 @@ class ShoppingCart:
         print("Thank you for shopping!")
 
         self.items.clear()
+
+cart = ShoppingCart()
+
+while True:
+    print("\nShopping Cart Menu")
+    print("1 - Add Item")
+    print("2 - Remove Item")
+    print("3 - View Cart")
+    print("4 - Checkout")
+    print("5 - Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        name = input("Enter item name: ")
+        price = float(input("Enter item price: "))
+        cart.add_item(name, price)
+
+    elif choice == "2":
+        name = input("Enter item name to remove: ")
+        cart.remove_item(name)
+
+    elif choice == "3":
+        cart.view_cart()
+
+    elif choice == "4":
+        cart.checkout()
+
+    elif choice == "5":
+        print("Program ended.")
+        break
+
+    else:
+        print("Invalid choice.")
