@@ -12,7 +12,6 @@ def calculate(num1, num2, operation):
     else:
         return None  
 
-
 print("==== Simple Calculator ====")
 print("1. Add")
 print("2. Subtract")
