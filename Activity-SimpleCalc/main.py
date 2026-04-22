@@ -10,7 +10,7 @@ def calculate(num1, num2, operation):
             return "Error: Cannot divide by zero"
         return num1 / num2
     else:
-        return "Invalid choice"
+        return None  
 
 
 print("==== Simple Calculator ====")
@@ -21,12 +21,15 @@ print("4. Divide")
 
 try:
     operation = int(input("Enter choice (1/2/3/4): "))
-    num1 = float(input("Enter num1: "))
-    num2 = float(input("Enter num2: "))
 
-    result = calculate(num1, num2, operation)
-    print("Result:", result)
+    if operation not in [1, 2, 3, 4]:
+        print("Invalid choice.")
+    else:
+        num1 = float(input("Enter num1: "))
+        num2 = float(input("Enter num2: "))
+
+        result = calculate(num1, num2, operation)
+        print("Result:", result)
 
 except ValueError:
     print("Error. Please enter valid numbers.")
-    
